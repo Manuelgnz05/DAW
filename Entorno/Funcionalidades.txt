@@ -1,0 +1,44 @@
+Servicio de transporte en coche
+Foto de perfil
+Ubicación
+Enlazar Contactos
+verificación por foto
+verificación por DNI
+notificaciones
+Mensajería instantánea
+Visto y no visto de mensajes
+videollamada
+llamada
+mensajes de audio
+Google Maps
+Match
+Eventos
+Tiempo
+Estado online
+atención al cliente
+sobre nosotros
+Descripción persona
+características persona
+calendario
+creación de grupos
+Estado
+
+Plan Básico:
+- anuncios
+- limite de 50 likes 
+- sin eventos
+- sin grupos
+- limite de 5 etiquetas
+
+Plan Premium:
+- sin anuncios
+- limite de 100 likes
+- limite de eventos
+- limite de grupos
+- limite de 10 etiquetas
+
+Plan Premium Ultra:
+- sin anuncios
+- sin ningún limite
+- Descuento del 10% en eventos y restaurantes
+

@@ -1,0 +1,59 @@
+Transporte
+-servicio de transporte en coche
+
+Perfil
+- Foto de perfil
+- Estado online
+- Descripción persona
+- características persona
+- Estado
+
+Localización
+- ubicación
+- Google Maps
+
+Contactos
+- Enlazar contactos
+- videollamada
+- llamada
+
+-Mensajería
+- Notificaciones
+- Mensajería instantánea
+- Visto y no visto de mensajes
+- mensajes de audio
+- Match
+- Tiempo
+
+Seguridad
+- verificación foto
+- verificación DNI
+
+Eventos
+- Eventos
+- calendario
+- creación de grupos
+
+Atención
+- atención al cliente
+- sobre nosotros
+
+Planes 
+Plan Básico:
+- anuncios
+- limite de 50 likes 
+- sin eventos
+- sin grupos
+- limite de 5 etiquetas
+
+Plan Premium:
+- sin anuncios
+- limite de 100 likes
+- limite de eventos
+- limite de grupos
+- limite de 10 etiquetas
+
+Plan Premium Ultra:
+- sin anuncios
+- sin ningún limite
+- Descuento del 10% en eventos y restaurantes
