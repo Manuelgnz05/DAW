@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura HTML</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .description {
+            color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .structure-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .code-side, .visual-side {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .code-side h2, .visual-side h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .html-tag {
+            color: #e74c3c;
+        }
+        
+        .html-attr {
+            color: #3498db;
+        }
+        
+        .html-comment {
+            color: #7f8c8d;
+        }
+        
+        .html-text {
+            color: #ecf0f1;
+        }
+        
+        .visual-structure {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .element {
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+        }
+        
+        .html-element {
+            background: #34495e;
+            color: white;
+        }
+        
+        .head-element {
+            background: #16a085;
+            color: white;
+        }
+        
+        .body-element {
+            background: #2980b9;
+            color: white;
+        }
+        
+        .header-element {
+            background: #e74c3c;
+            color: white;
+        }
+        
+        .nav-element {
+            background: #e67e22;
+            color: white;
+        }
+        
+        .main-element {
+            background: #9b59b6;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .section-element {
+            background: #3498db;
+            color: white;
+            padding: 10px;
+        }
+        
+        .article-element {
+            background: #1abc9c;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        
+        .aside-element {
+            background: #f39c12;
+            color: white;
+        }
+        
+        .footer-element {
+            background: #95a5a6;
+            color: white;
+        }
+        
+        .nested {
+            margin-left: 20px;
+            border: 1px dashed rgba(255, 255, 255, 0.5);
+        }
+        
+        .explanation {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        
+        .explanation h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tag-info {
+            margin-bottom: 25px;
+        }
+        
+        .tag-info h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tag-info h3:before {
+            content: "<>";
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        
+        .tag-description {
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        
+        .tag-content {
+            background: #f8f9fa;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .structure-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">David Postigo Rodriguez</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">400.000000000000</mso:Order>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">David Postigo Rodriguez</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ContentTypeId msdt:dt="string">0x0101002DF270A473DA0C42BBAF0E14BC615A27</mso:ContentTypeId>
+<mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Estructura Estándar de un Documento HTML</h1>
+            <p class="description">Esquema visual que muestra la jerarquía y relación entre las etiquetas semánticas de HTML5</p>
+        </header>
+        
+        <div class="structure-container">
+            <div class="code-side">
+                <h2>Código HTML Estructurado</h2>
+                <pre><code><span class="html-tag">&lt;!DOCTYPE html&gt;</span>
+<span class="html-tag">&lt;html <span class="html-attr">lang</span>=<span class="html-text">"es"</span>&gt;</span>
+  <span class="html-tag">&lt;head&gt;</span>
+    <span class="html-comment">&lt;!-- Metadatos, enlaces a CSS, título --&gt;</span>
+  <span class="html-tag">&lt;/head&gt;</span>
+  
+  <span class="html-tag">&lt;body&gt;</span>
+    <span class="html-tag">&lt;header&gt;</span>
+      <span class="html-comment">&lt;!-- Encabezado: logo, título principal --&gt;</span>
+      <span class="html-tag">&lt;nav&gt;</span>
+        <span class="html-comment">&lt;!-- Menú de navegación --&gt;</span>
+      <span class="html-tag">&lt;/nav&gt;</span>
+    <span class="html-tag">&lt;/header&gt;</span>
+    
+    <span class="html-tag">&lt;main&gt;</span>
+      <span class="html-comment">&lt;!-- Contenido principal --&gt;</span>
+      <span class="html-tag">&lt;section&gt;</span>
+        <span class="html-comment">&lt;!-- Sección temática --&gt;</span>
+        <span class="html-tag">&lt;article&gt;</span>
+          <span class="html-comment">&lt;!-- Contenido independiente --&gt;</span>
+        <span class="html-tag">&lt;/article&gt;</span>
+        <span class="html-tag">&lt;article&gt;</span>
+          <span class="html-comment">&lt;!-- Otro contenido independiente --&gt;</span>
+        <span class="html-tag">&lt;/article&gt;</span>
+      <span class="html-tag">&lt;/section&gt;</span>
+      
+      <span class="html-tag">&lt;aside&gt;</span>
+        <span class="html-comment">&lt;!-- Contenido relacionado (barra lateral) --&gt;</span>
+      <span class="html-tag">&lt;/aside&gt;</span>
+    <span class="html-tag">&lt;/main&gt;</span>
+    
+    <span class="html-tag">&lt;footer&gt;</span>
+      <span class="html-comment">&lt;!-- Pie de página --&gt;</span>
+    <span class="html-tag">&lt;/footer&gt;</span>
+  <span class="html-tag">&lt;/body&gt;</span>
+<span class="html-tag">&lt;/html&gt;</span></code></pre>
+            </div>
+            
+            <div class="visual-side">
+                <h2>Representación Visual de la Estructura</h2>
+                <div class="visual-structure">
+                    <div class="element html-element">&lt;html&gt;</div>
+                    <div class="nested">
+                        <div class="element head-element">&lt;head&gt;</div>
+                        <div class="element body-element">&lt;body&gt;</div>
+                        <div class="nested">
+                            <div class="element header-element">&lt;header&gt;</div>
+                            <div class="nested">
+                                <div class="element nav-element">&lt;nav&gt;</div>
+                            </div>
+                            
+                            <div class="element main-element">&lt;main&gt;</div>
+                            <div class="nested">
+                                <div class="element section-element">&lt;section&gt;</div>
+                                <div class="nested">
+                                    <div class="element article-element">&lt;article&gt;</div>
+                                    <div class="element article-element">&lt;article&gt;</div>
+                                </div>
+                                
+                                <div class="element aside-element">&lt;aside&gt;</div>
+                            </div>
+                            
+                            <div class="element footer-element">&lt;footer&gt;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="explanation">
+            <h2>Explicación de las Etiquetas Semánticas</h2>
+            
+            <div class="tag-info">
+                <h3>&lt;header&gt;</h3>
+                <p class="tag-description">Representa el encabezado de una página o sección. Suele contener el logotipo, título principal y menú de navegación.</p>
+                <div class="tag-content">
+                    <strong>Contiene:</strong> Logo, título principal, menú de navegación (&lt;nav&gt;)
+                </div>
+            </div>
+            
+            <div class="tag-info">
+                <h3>&lt;nav&gt;</h3>
+                <p class="tag-description">Define un bloque de enlaces de navegación. Debe usarse para el menú principal del sitio.</p>
+                <div class="tag-content">
+                    <strong>Contiene:</strong> Listas de enlaces (&lt;ul&gt;, &lt;li&gt;, &lt;a&gt;)
+                </div>
+            </div>
+            
+            <div class="tag-info">
+                <h3>&lt;main&gt;</h3>
+                <p class="tag-description">Representa el contenido principal del documento. Solo debe haber un &lt;main&gt; por página.</p>
+                <div class="tag-content">
+                    <strong>Contiene:</strong> &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;
+                </div>
+            </div>
+            
+            <div class="tag-info">
+                <h3>&lt;section&gt;</h3>
+                <p class="tag-description">Agrupa contenido temáticamente relacionado. Cada sección debe tener su propio encabezado.</p>
+                <div class="tag-content">
+                    <strong>Contiene:</strong> &lt;article&gt;, &lt;header&gt; (opcional), contenido relacionado
+                </div>
+            </div>
+            
+            <div class="tag-info">
+                <h3>&lt;article&gt;</h3>
+                <p class="tag-description">Representa contenido independiente y autónomo que podría distribuirse por separado.</p>
+                <div class="tag-content">
+                    <strong>Contiene:</strong> Texto, imágenes, videos, etc. que forman una unidad de contenido
+                </div>
+            </div>
+            
+            <div class="tag-info">
+                <h3>&lt;aside&gt;</h3>
+                <p class="tag-description">Contiene contenido relacionado indirectamente con el contenido principal, como barras laterales.</p>
+                <div class="tag-content">
+                    <strong>Contiene:</strong> Información complementaria, enlaces relacionados, publicidad
+                </div>
+            </div>
+            
+            <div class="tag-info">
+                <h3>&lt;footer&gt;</h3>
+                <p class="tag-description">Representa el pie de página de una página o sección. Suele contener información de contacto, enlaces legales, etc.</p>
+                <div class="tag-content">
+                    <strong>Contiene:</strong> Información de contacto, enlaces legales, mapa del sitio, redes sociales
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
