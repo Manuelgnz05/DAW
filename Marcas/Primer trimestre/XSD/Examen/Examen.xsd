@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ExamenLenguajeDeMarcas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Modulo" type="tipoModulo" />
+                <xs:element name="Tipo" type="tipoTipo"/>
+                <xs:element name="Alumno" type="tipoAlumno" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--tipoModulo-->
+    <xs:simpleType name="tipoModulo">
+        <xs:restriction base="xs:string">
+            <xs:length value="5" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--tipoTipo-->
+
+    <xs:simpleType name = "tipoTipo">
+        <xs:restriction base = "xs:string">
+            <xs:enumeration value = "Final"/>
+            <xs:enumeration value = "Parcial"/>
+            <xs:enumeration value = "Recuperacion"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--tipoAlumno-->
+    <xs:complexType name="tipoAlumno">
+        <xs:all>
+            <xs:element name="Nombre" type="xs:string" />
+            <xs:element name="Email" type="xs:string" />
+            <xs:element name="Codigo" type="tipoCodigo" />
+            <xs:element name="Resultados" type="tipoResultados" />
+        </xs:all>
+    </xs:complexType>
+
+    <!--tipoCodigo-->
+    <xs:simpleType name="tipoCodigo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="DAW-[0-9]{4}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--tipoResultados-->
+    <xs:complexType name="tipoResultados">
+        <xs:sequence>
+            <xs:element name="Nota" type="tipoNota" />
+            <xs:element name="CalificacionFinal" type="tipoCalificacion" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--tipoNota-->
+    <xs:complexType name = "tipoNota">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="convocatoria" type = "xs:integer"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!--tipoCalificacion-->
+    <xs:complexType name = "tipoCalificacion">
+        <xs:choice>
+            <xs:element name = "Apto" type = "xs:string"/>
+            <xs:element name = "NoApto" type = "xs:string"/>
+        </xs:choice>
+    </xs:complexType>
+
+</xs:schema>

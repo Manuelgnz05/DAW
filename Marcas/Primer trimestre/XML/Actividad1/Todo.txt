@@ -1,0 +1,100 @@
+Ejercicio1:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudades>
+	<ciudad>
+		<nombre>Nueva Dheli</nombre>
+		<pais continente="Asia">India</pais>
+	</ciudad>
+	<ciudad>
+		<nombre>Lisboa</nombre>
+		<pais continente="Europa">Portugal</pais>
+	</ciudad>
+	<ciudad>
+		<nombre>El Cairo</nombre>
+		<pais continente="Africa">Egipto</pais>
+	</ciudad>
+</ciudades>
+
+Ejercicio2:
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pedidos> 
+	<destinatario_del_pedido> Juan Delgado Martínez </destinatario_del_pedido>
+	<artículo_pedido> bicicleta A2023 </artículo_pedido>
+	<direccion_de_la_entrega> calle Barco 4, tercer piso, letra A </direccion_de_la_entrega>
+	<fecha_de_entrega> 19-5-2000 </fecha_de_entrega>
+</pedidos>
+
+Ejercicio3:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<hechos_historicos>
+	<hecho>
+		<descripción> IBM da a conocer el PC </descripción>
+		<fecha>
+			<dia> 12 </dia>
+			<mes> 8 </mes>
+			<ano> 1981 </ano>
+		</fecha>
+	</hecho>
+	<hecho>
+		<descripción> IBM da a conocer el PC </descripción>
+		<fecha>
+			<dia> 12 </dia>
+			<mes> 8 </mes>
+			<ano> 1981 </ano>
+		</fecha>
+	</hecho>
+	<hecho>
+		<descripción> IBM da a conocer el PC </descripción>
+		<fecha>
+			<dia> 12 </dia>
+			<mes> 8 </mes>
+			<ano> 1981 </ano>
+		</fecha>
+	</hecho>
+
+</hechos_historicos>
+
+Ejercicio4:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<mensaje>
+
+	<remite> 
+		<nombre> Alfedro Reino </nombre>
+		<email> alf@ibium.com </email>
+	</remite>
+	<destinatario>
+		<nombre> Bill Clinton </nombre>
+		<email> president@whitehouse.gov </email>
+	</destinatario>
+	<asunto> Hola Bill </asunto>
+	<texto> 
+		<parrafo1> ¿Hola Bill? </parrafo1>
+		<parrafo2> Hace mucho tiempo que no escribes. A ver si llamas y quedamos pronto </parrafo2>
+		<parrafo3> Un saludo </parrafo3>
+	</texto>
+
+</mensaje>
+
+Ejercicio5: 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<animales>
+	<animal> 
+		<especie> perro </especie>
+		<numero_patas> 4 </numero_patas>
+	</animal>
+	<animal> 
+		<especie> pato </especie>
+		<numero_patas> 2 </numero_patas>
+	</animal>
+	<animal> 
+		<especie> ballena </especie>
+		<numero_patas> 0 </numero_patas>
+	</animal>
+
+</animales>

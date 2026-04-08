@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--Es
+    obligatorio que en la cabecera haya una fecha.
+    • El grupo Concesur dispone de al menos 30 concesionarios en el territorio español.
+    • Los días laborables son Lunes, Martes, Miércoles y Jueves.
+    • El número de coches vendidos debe ser un entero entre 0 y 99-->
+    <xs:element name="Grupo_Concesur">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="concesionario" minOccurs="30" maxOccurs="unbounded"> <!--minOccurs=30
+                    porque dice: El grupo Concesur dispone de al menos 30 concesionarios en el
+                    territorio español.-->
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cabecera">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titulo" type="xs:string" />
+                                        <xs:element name="descripcion">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="fecha" use="required" type="fechaTp" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="resumen">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="comercial" minOccurs="2"
+                                            maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+
+                                                    <xs:element name="cliente_final"
+                                                        type="tipoCliente" />
+
+                                                    <xs:element name="cliente_empresa"
+                                                        type="tipoCliente" />
+
+                                                </xs:sequence>
+
+                                                <xs:attribute name="nombre" use="required"
+                                                    type="xs:string" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+
+                        <xs:attribute name="cif" use="required" type="cifTp" />
+
+                        <xs:attribute name="ubicación" use="required" type="xs:string" />
+
+                        <xs:attribute name="localización" use="required" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <!--DEFINIMOS
+    EL TIPO FECHA-->
+
+    <xs:simpleType name="fechaTp">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{1,2}/\d{1,2}/\d{4}" /> <!--CREAMOS
+            LA EXPRESION REGULAR PARA LA FECHA, 
+                                                         DE 1 A 2 DIGITIOS PARA EL DIA Y EL MES Y 4 DIGITOS 
+                                                         PARA EL AÑO, SEPARADOS POR "/" -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--DEFINIMOS
+    EL TIPO CIF-->
+    <xs:simpleType name="cifTp">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]\d{7}" />       <!--En
+                                                    el atributo cif establecemos una expresión 
+                                                    regular de una letra mayúscula entre la A y la Z 
+                                                    incluidas, y 8 números.-->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--DEFINIMOS
+    EL TIPO DIA SEMANA-->
+
+    <xs:simpleType name="diaTp">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Lunes" />
+            <xs:enumeration value="Martes" />
+            <xs:enumeration value="Miercoles" />
+            <xs:enumeration value="Jueves" />
+            <!--CREAMOS
+            LA RESTRICCION ENUMERATION PARA LOS DIFERENTES TIPOS DE DIA QUE HAY -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--DEFINIMOS
+    EL TIPO MATRICULA-->
+
+    <xs:simpleType name="tipoMatricula">
+        <xs:restriction base= "xs:string">
+            <xs:pattern value="\d{4}-\[A-Z]{3}" /> <!--Validamos
+                                                el tipo de matricula de 4 digitos separadas 
+                                                con guion y 3 letras de A a Z-->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--DEFINIMOS
+    EL TIPO CLIENTE-->
+    <xs:complexType name="tipoCliente">
+        <xs:sequence minOccurs="0">
+            <xs:element name="dia"
+                maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence minOccurs="0">
+                        <xs:element name="coches_vendidos"
+                            minOccurs="0"
+                            maxOccurs="1"
+                            type="xs:integer" />
+                        <xs:element name="matricula"
+                            minOccurs="0"
+                            maxOccurs="unbounded"
+                            type="tipoMatricula" />
+                    </xs:sequence>
+                    <xs:attribute name="nombre"
+                        use="required"
+                        type="diaTp" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsd' href='Ejercicio.xsd'?>
+<ExamenLenguajeDeMarcas>
+    <Modulo>LMGSI</Modulo>
+    <Tipo>Final</Tipo>
+    <Alumno>
+        <Nombre>María Perez Loma</Nombre>
+        <Codigo>DAW-2025</Codigo>
+        <Email>Maria.perez@alumnos.com</Email>
+        <Resultados>
+            <Nota convocatoria="1">7</Nota>
+            <CalificacionFinal>
+                <Apto>Objetivos del módulo superados. </Apto>
+            </CalificacionFinal>
+        </Resultados>
+    </Alumno>
+    <Alumno>
+        <Nombre>Ana Martín Jurado</Nombre>
+        <Email>ana.martin@alumnos.com </Email>
+        <Codigo>DAW-1998</Codigo>
+        <Resultados>
+            <Nota convocatoria="2">4</Nota>
+            <CalificacionFinal>
+                <NoApto>Recup en la próx conv. </NoApto>
+            </CalificacionFinal>
+        </Resultados>
+    </Alumno>
+</ExamenLenguajeDeMarcas>

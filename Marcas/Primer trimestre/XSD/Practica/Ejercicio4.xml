@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido id="P-2025-001" fecha="2025-11-07">
+    <cliente>
+        <nombre>Ana López</nombre>
+        <email tipo="personal">ana.lopez@ejemplo.com</email>
+    </cliente>
+    <lineasPedido>
+        <item isbn="978-0321765723" cantidad="1">
+            <titulo>El Señor de los Anillos</titulo>
+            <precioUnidad moneda="EUR">15.99</precioUnidad>
+        </item>
+        <item isbn="978-8401340453" cantidad="2">
+            <titulo>Cien años de soledad</titulo>
+            <precioUnidad moneda="EUR">12.50</precioUnidad>
+        </item>
+    </lineasPedido>
+    <totalFactura>40.99</totalFactura>
+</pedido>

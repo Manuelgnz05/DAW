@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animales>
+	<animal> 
+		<especie> perro </especie>
+		<numero_patas> 4 </numero_patas>
+	</animal>
+	<animal> 
+		<especie> pato </especie>
+		<numero_patas> 2 </numero_patas>
+	</animal>
+	<animal> 
+		<especie> ballena </especie>
+		<numero_patas> 0 </numero_patas>
+	</animal>
+
+</animales>

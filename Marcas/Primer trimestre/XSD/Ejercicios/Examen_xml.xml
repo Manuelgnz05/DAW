@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Grupo_Concesur>
+    <concesionario cif="B6789457" ubicación="Polígono industrial Vistasierra" localización="Malaga">
+        <cabecera>
+            <titulo>Venta de Coches</titulo>
+            <descripcion fecha="30/12/2023">Resumen semanal de ventas de coches por comercial</descripcion>
+        </cabecera>
+        <resumen>
+            <comercial nombre="Mar Salada">
+                <cliente_final>
+                    <dia nombre="Lunes">
+                        <coches_vendidos>4</coches_vendidos>
+                        <matricula>4562-BFS</matricula>
+                        <matricula>1221-BFP</matricula>
+                        <matricula>8987-BFP</matricula>
+                        <matricula>5547-AVV</matricula>
+                    </dia>
+                    <dia nombre="Miercoles">
+                        <coche_vendidos>2</coche_vendidos>
+                        <matricula>3327-ACB</matricula>
+                        <matricula>5560-BGT</matricula>
+                    </dia>
+                </cliente_final>
+                <cliente_empresa>
+                    <dia nombre="Miercoles">
+                        <coche_vendidos>2
+                        </coche_vendidos>
+                        <matricula>4361-BGH</matricula>
+                        <matricula>9002-BGA</matricula>
+                    </dia>
+                    <dia nombre="Jueves">
+                        <coche_vendidos>5
+                        </coche_vendidos>
+                        <matricula>8788-BGB</matricula>
+                        <matricula>5411-BGB</matricula>
+                        <matricula>4561-BGB</matricula>
+                        <matricula>4113-BGB</matricula>
+                        <matricula>4612-BGB</matricula>
+                    </dia>
+                </cliente_empresa>
+
+            </comercial>
+            <comercial nombre="Hermigio Honrado">
+                <cliente_final>
+                    <dia nombre="Martes">
+                        <coches_vendidos>3</coches_vendidos>
+                        <matricula>5344-AZZ</matricula>
+                        <matricula>6711-AZZ</matricula>
+                        <matricula>7887-BAZ</matricula>
+
+                    </dia>
+                    <dia nombre="Miercoles">
+                        <coches_vendidos>2
+                        </coches_vendidos>
+                        <matricula>5400-BDX</matricula>
+                        <matricula>6579-BFG</matricula>
+
+                    </dia>
+                </cliente_final>
+                <cliente_empresa>
+                    <dia nombre="Martes">
+                        <coches_vendidos>2
+                        </coches_vendidos>
+                        <matricula>7781-BGG</matricula>
+                        <matricula>6551-BGP</matricula>
+                    </dia>
+                    <dia nombre="Jueves">
+                        <coches_vendidos>1
+                        </coches_vendidos>
+                        <matricula>7780-BGA</matricula>
+                    </dia>
+                </cliente_empresa>
+            </comercial>
+        </resumen>
+    </concesionario>
+</Grupo_Concesur>

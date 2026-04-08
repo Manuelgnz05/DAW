@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="pedido">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="cliente" type="tipoCliente" />
+                <xs:element name="lineasPedido" type="tipoPedido" />
+                <xs:element name="totalFactura" type="tipoFactura" />
+
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+            <xs:attribute name="fecha" type="xs:date" />
+        </xs:complexType>
+    </xs:element>
+
+    <!--TipoCliente-->
+
+    <xs:complexType name="tipoCliente">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="email">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="tipo" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--TipoPedido-->
+
+    <xs:complexType name="tipoPedido">
+        <xs:sequence>
+
+            <xs:element name="item" maxOccurs = "unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="titulo" type="xs:string" />
+
+                        <xs:element name="precioUnidad">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:string">
+                                        <xs:attribute name="moneda" type = "tipoMoneda"/>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+
+                    </xs:sequence>
+                    <xs:attribute name="isbn" type="xs:string" />
+                    <xs:attribute name="cantidad" type="xs:positiveInteger" />
+
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoId">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]-\d{4}-\d{3}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoFactura">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name = "tipoMoneda">
+        <xs:restriction base = "xs:string">
+            <xs:enumeration value = "EUR"/>
+            <xs:enumeration value = "DOL"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
+
+
+<!-- 
+    <xs:element name="">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:">
+                    <xs:attribute name=""/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    -->
