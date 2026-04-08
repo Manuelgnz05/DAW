@@ -1,0 +1,10 @@
+1. database
+2. reverse engineer
+3. todo next hasta que tengas que elegir la base de datos
+4. eliges la base de datos y todo next
+
+BBDD
+- CRUD: insert, update, delete
+- create database, table / drop
+- alter table
+- rutinas
