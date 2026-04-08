@@ -1,0 +1,12 @@
+Nombre del SO	Microsoft Windows 11 Pro Education
+Procesador	Intel(R) Core(TM) Ultra 5 225U, 1500 Mhz, 12 procesadores principales, 14 procesadores lógicos
+Memoria física instalada (RAM)	16,0 GB
+Versión y fecha de BIOS	LENOVO R30ET55W(1.55 ), 07/01/2026
+Nombre del sistema	MANUELGONZALEZ
+Nombre de usuario	manuelgonzalez\mgonzalez
+
+¿aparece la misma información?
+Aparece casi la misma información excluyendo algunos datos 
+
+¿Hay algo diferente?
+No sale el número de núcleos entre otras cosas.
