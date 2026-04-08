@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+}
+
+.contenedor1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+    width: 35%;
+    height: 100vh;
+    gap: 30px;
+    padding: 0px 130px;
+}
+
+.negro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    height: 25vh;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.violeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35%;
+    background-color: violet;
+}
+
+.verde{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35%;
+    background-color: green;
+}
+
+.contenedor2{
+    background-color: blue;
+    width: 120%;
+    object-fit: cover;
+    object-position: top;
+    height: 100vh
+}

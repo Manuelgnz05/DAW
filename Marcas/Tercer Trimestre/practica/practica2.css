@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+}
+
+.contenedor{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto1{
+    background-color: blue;
+}
+
+.foto2{
+    background-color: red;
+}
+
+.texto{
+    transform: rotate(-90deg);
+    font-size: 100px;
+
+}
