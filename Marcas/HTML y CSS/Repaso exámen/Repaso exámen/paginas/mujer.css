@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecera{
+    background-image: url(../img/modelwoman.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+    margin-bottom: 30px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 300px;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+}
+
+.parte-menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.enlace-usuario {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.texto-menu{
+    font-size: 20px;
+    font-weight: 800;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.texto-menu:nth-of-type(1){
+    border-bottom: 3px gray solid;
+}
+
+.texto-menu:hover{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.texto-user{
+    color: gray;
+    font-size: 20px;
+}
+
+.user{
+    width: 6%;
+}
+
+.rebajas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+.rebajas h2{
+    font-size: 90px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.rebajas p{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.numeros{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.padre-menu{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.menu-ropa{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.busc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 53%;
+}
+
+.imagen{
+    height: 60px;
+}
+
+.buscar{
+    border: solid 1px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.buscar input{
+    border: none;
+}
+
+.buscar input:focus{
+    outline: none;
+}
+
+.lupa{
+    height: 20px;
+    margin-right: 3px;
+}
+
+.menu-productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 80px;
+    color: gray;
+}
+
+.producto:hover{
+    cursor: pointer;
+    border: solid 2px gray;
+    border-radius: 20px;
+}
+
+.imagen-producto{
+    border-radius: 20px;
+}
+
+.precio{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

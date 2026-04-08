@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="alumnos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="alumno" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="direccion" type="tipoDireccion" maxOccurs="2"/>
+                            <xs:element name="telefono" type="tipoTelefono" minOccurs="0" maxOccurs="5" />
+                        </xs:sequence>
+                        <xs:attribute name="dni" type="tipoDni" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:simpleType name="tipoDni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}[A-Z]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoDireccion">
+        <xs:sequence>
+            <xs:element name="calle" type="xs:string" />
+            <xs:element name="numero" type="tipoNumero" />
+            <xs:element name="ciudad" type="xs:string" />
+            <xs:element name="provincia" type="tipoProvincia" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoTelefono">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9]{9}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoNumero">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="500" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoProvincia">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Badajoz" />
+            <xs:enumeration value="Caceres" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

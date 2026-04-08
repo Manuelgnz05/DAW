@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.padre{
+    display: flex;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+    width: 50%;
+}
+
+.logo h1{
+    width: 100%;
+    font-size: 40px;
+}
+
+.logo img{
+    margin-bottom: 80px;
+}
+
+.user{
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.user form{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto{
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 15px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.boton1{
+    padding: 20px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.boton2{
+    display: flex;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.enlace1{
+    text-decoration: none;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.enlace2{
+    text-decoration: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: gray;
+}
+
+.imagen {
+    width: 65vw;
+    height: 100vh;
+}

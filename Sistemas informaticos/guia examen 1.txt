@@ -1,0 +1,150 @@
+Diapositiva 1: 
+
+El Hardware - Funciones, Clasificación y Tipos de Dispositivos
+
+El hardware es el conjunto de componentes físicos de un sistema informático:
+aquellos que podemos ver y tocar. Sin el hardware, el software no podría
+ejecutarse, ya que necesita una base material sobre la que operar. Esta
+presentación aborda sus funciones, clasificación y evolución tecnológica.
+
+Diapositiva 2:
+
+Concepto de sistemas informáticos
+
+Hardware
+Proporciona los medios materiales
+
+Software
+Aporta las instrucciones
+
+Personas
+Generan la interacción
+
+Un sistema informático está formado por tres elementos esenciales: el hardware, el software y las personas. El
+hardware proporciona los medios materiales, el software las instrucciones y los usuarios la interacción. Sin esta
+tríada, el procesamiento de información no sería posible.
+
+Diapositiva 3: 
+
+Componentes principales de hardware
+
+Los principales bloques funcionales del hardware son: los
+dispositivos de entrada, que captan datos; la unidad de proceso,
+que los transforma; la memoria, que los almacena; y los
+dispositivos de salida, que muestran los resultados. Todo el
+sistema se organiza en torno a estos componentes.
+
+Diapositiva 4: 
+
+La arquitectura del ordenador
+
+Modelo de Von Neumann
+El modelo de Von Neumann, base de los ordenadores actuales, define una
+estructura en la que los datos y las instrucciones se almacenan en una
+misma memoria, la CPU.
+
+Diapositiva 5:
+
+La unidad central de proceso(CPU)
+
+La CPU es el cerebro del ordenador. Se encarga de
+interpretar y ejecutar instrucciones.
+
+Diapositiva 6:
+
+El microprocesador
+
+El microprocesador integra en un solo chip todas las funciones de la CPU. Su rendimiento depende de la velocidad
+del reloj (GHz), el número de núcleos y la arquitectura.
+
+Intel Core
+Procesadores de alto rendimiento para
+ordenadores personales y estaciones de
+trabajo
+
+AMD Ryzen
+Arquitectura Zen con múltiples núcleos y
+eficiencia energética
+
+Apple M1
+Sistema en chip con arquitectura ARM
+para dispositivos Apple
+
+Diapositiva 7:
+
+Memoria principal
+
+RAM - Memoria volátil
+
+- Rápida y temporal
+- Almacena datos durante la ejecución
+- DDR4 y DDR5 actuales
+- Alta velocidad y eficiencia energética
+
+ROM - Memoria permanente
+
+- Información fija
+- Contiene el firmware
+- No se borra al apagar
+- Esencial para el arranque
+
+La memoria principal (RAM y ROM) guarda los datos y programas mientras se ejecutan. La RAM es volátil y rápida, mientras que la ROM
+contiene información fija como el firmware. Las versiones actuales de RAM (DDR4, DDR5) ofrecen altas velocidades y eficiencia energética.
+
+Diapositiva 8:
+
+Memoria secundaria o de almacenamiento
+
+Disco duro (HDD)
+Almacenamiento magnético tradicional de gran capacidad
+
+Unidades SSD
+Estado sólido, rapidez y durabilidad superiores
+
+Memoria óptica
+CD, DVD y Blu-ray para distribución de contenido
+
+Unidades flash
+Portátiles y de acceso rápido
+
+El almacenamiento conserva los datos a largo plazo. Incluye discos duros (HDD),
+unidades de estado sólido (SSD), memorias ópticas (CD, DVD) y unidades flash. La
+tendencia actual es hacia los SSD por su rapidez y durabilidad.
+
+Diapositiva 9:
+
+Dispositivos de salida
+
+Monitores
+Pantallas LCD, LED y OLED para visualización de información
+
+Impresoras
+Láser, inyección de tinta y 3D para salida física
+
+Altavoces
+Reproducción de audio y sonido
+
+Proyectores
+Presentación en grandes superficies
+
+Muestran los resultados del procesamiento. Los monitores y las impresoras son los más conocidos, pero también lo son los altavoces,
+proyectores y pantallas táctiles, que pueden combinar funciones.
+
+Diapositiva 10:
+
+Evolución del Hardware
+
+Primera generación
+Válvulas de vacío - Grandes dimensiones y alto consumo
+
+Segunda generación
+Transistores - Reducción de tamaño y mayor fiabilidad
+
+Tercera generación
+Circuitos integrados - Miniaturización significativa
+
+Cuarta generación
+Microprocesadores - Integración completa en un chip
+
+Actualidad
+Nanotecnología - Límites físicos de la miniaturización

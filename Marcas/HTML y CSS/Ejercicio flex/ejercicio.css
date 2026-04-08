@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.navbar {
+  background-color: #555; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;           
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.menu {
+  display: flex;       
+  list-style: none;   
+  gap: 10px;
+
+}
+
+.menu li {
+  background-color: #ccc; 
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
