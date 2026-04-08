@@ -1,0 +1,76 @@
+Diapositiva 1:
+
+
+Midiendo la Sostenibilidad
+
+En esta presentación vamos a detallar varios aspectos de la sostenibilidad de nuestra empresa "GreenTaxi" como la medición de la sostenibilidad, los certificados de sostenibilidad, y la inversión socialmente responsable.
+
+
+Diapositiva 2: 
+
+Indicadores de Impacto Ambiental 4 planet
+
+Estos indicadores miden cómo contribuimos a que el aire de Sevilla sea más respirable, especialmente en zonas críticas
+como el Casco Antiguo o Triana. El transporte genera el 45% delas emisiones en la ciudad; cada kilómetro eléctrico cuenta.
+
+Emisiones de CO2 evitadas: 
+Toneladas de CO2 que se habrían emitido si los trayectos se realizaran con vehículos de combustión.
+
+Reducción de NO y PM10:
+Reducción de óxidos de nitrógeno y partículas finas responsables de problemas respiratorios urbanos.
+
+Contaminación acústica:
+Estimación de decibelios evitados en entornos residenciales y monumentales, mejorando el bienestar vecinal.
+
+Mix Energético:
+Porcentaje de carga proveniente de fuentes renovables: autoconsumo solar o certificados de garantía de origen.
+
+
+Diapositiva 3:
+
+Indicadores Sociales y Operativos 4 People & Prosperity
+
+Nuestra empresa no solo mueve personas: crea comunidad y mejora la calidad de vida. Para que el impacto sea real, el modelo debe ser
+eficiente y rentable.
+
+
+Impacto Social:
+
+Accesibilidad: Ratio de Eurotaxis eléctricos adaptados para el pilar de la Ordenanza Municipal
+
+Seguridad vial: 
+Horas de formación en conducción eficiente y segura
+
+Brecha de género: 
+Porcentaje de mujeres conductoras en una industria masculinizada
+
+Bienestar del conductor: 
+Reducción de fatiga por menor ruido y vibración en jornadas de 8-10 horas
+
+Operativos Sostenibles:
+Eficiencia energética: Consumo medio kWh/100km de la flota
+
+Km en vacío vs. con pasajeros: 
+Algoritmos de despacho para minimizar trayectos sin cliente
+
+Tasa de circularidad: 
+Seguimiento del ciclo de vida de neumáticos y baterías para reciclaje o segunda vida
+
+
+Diapositiva 4:
+
+Sistema de Gestión Ambiental: Del Plan al Asfalto
+
+Un sistema de gestión ambiental estructurado en cuatro fases garantiza que la sostenibilidad no sea solo un eslogan, sino una operativa medible y mejorable.
+
+1. Planificación:
+Identificar aspectos ambientales (lavado, neumáticos, electricidad), cumplir normativa ZBE Cartuja y redactar política ambiental pública.
+
+2. Implementación:
+Carga inteligente en horas valle, formación en eco-conducción (frenada regenerativa: +15-20% autonomía) y alianzas para reciclaje de baterías de litio.
+
+3. Verificación: 
+Auditorías trimestrales, telemetría en tiempo real para detectar consumos anómalos.
+
+4. Mejora:
+Revisión anual por la Dirección. Si no se alcanzan metas de ahorro de la estrategia (ej. más cargadores rápidos propios).

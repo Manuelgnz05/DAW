@@ -1,0 +1,163 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00a169, #367557);
+    color: #1f2937;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Header con logo redondo */
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 3rem;
+    color: #90d2ca;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.buttons button {
+    background: #ffffff80;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+/* Hover normal */
+.buttons button:hover {
+    transform: translateY(-3px);
+    background: #ffffffcc;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Contenido */
+.content {
+    background: #ffffffbb;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 900px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.content p, .content ul {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+/* Sección de coches separada */
+/* Sección de coches */
+.car-section {
+    display: flex;
+    gap: 70px; /* más separación entre categorías */
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.car-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* más espacio entre tarjetas */
+}
+
+.car-category h3 {
+    font-size: 1.8rem; /* título más grande */
+    color: #0f766e;
+    margin-bottom: 20px;
+}
+
+/* Tarjetas de coches */
+.car-card {
+    background: #ffffffaa;
+    border-radius: 15px;
+    padding: 25px; /* más grande */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px; /* ancho mayor */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.car-card img {
+
+    width: 150px; /* más ancho */
+    height: 90px; /* más alto */
+    object-fit: contain;
+    margin-bottom: 15px;
+
+}
+
+.car-card p {
+    font-weight: 600;
+    font-size: 1.1rem; /* nombre más grande */
+    margin-bottom: 8px;
+}
+
+.electric {
+    font-size: 1rem; /* etiqueta más visible */
+    background: #4ade80;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+.car-card:hover {
+    transform: translateY(-6px);
+}
+
+
