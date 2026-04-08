@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <h2>Formulario de Inscripción Profesional</h2>
+
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>Datos de Identificación</legend>
+            <div>
+                <label>Nombre de Usuario:</label>
+                <input type="text" required 
+                       pattern="[A-Za-z0-9]+" maxlength="15" autofocus>
+            </div>
+            <div>
+                <label>Contraseña:</label>
+                <input type="password" minlength="8" maxlength="12" required>
+            </div>
+            <div>
+                <label">Dorsal Favorito:</label>
+                <input type="number" min="1" max="9999">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información de Contacto y Perfil</legend>
+            <div>
+                <label>Correo Electrónico:</label>
+                <input type="email"  required>
+            </div>
+            <div>
+                <label>Teléfono de Emergencia:</label>
+                <input type="tel" placeholder="Formato: 123-456-789">
+            </div>
+            <div>
+                <label>URL de Perfil (Strava/Instagram):</label>
+                <input type="url">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias de Carrera</legend>
+            
+            <div class="mismaLinea">
+                <label>Categoría:</label><br>
+                <input type="radio" value="junior"> <label>Junior</label>
+                <input type="radio" value="senior"> <label>Senior</label>
+                <input type="radio" value="veterano"> <label>Veterano</label>
+            </div>
+
+            <div class="mismaLinea">
+                <label>Talla de Camiseta:</label><br>
+                <input type="checkbox" value="S"> <label>S</label>
+                <input type="checkbox" value="M"> <label>M</label>
+                <input type="checkbox" value="L"> <label>L</label>
+                <input type="checkbox" value="XL"> <label>XL</label>
+            </div>
+
+            <div>
+                <label>Color de Equipación:</label>
+                <input type="color">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detalles de la Competición</legend>
+            <div>
+                <label>Fecha de Llegada:</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Nivel de Condición Física (1-10):</label>
+                <input type="range" min="1" max="10" step="1">
+            </div>
+            <div>
+                <label>Código de Invitación (AB123):</label>
+                <input type="text" pattern="[A-Z]{2}[0-9]{3}" title="Dos letras mayúsculas seguidas de tres números">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>País</legend>
+            <div>
+                <label>País de Origen:</label>
+                <input type="text" value="España" readonly>
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar todo">
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+*{
+    text-align: center;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 16px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    min-width: 450px;
+    border-radius: 8px 8px 8px 8px;
+    overflow: hidden;
+}
+
+
+.styled-table thead tr {
+    background-color: #713b3b;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+
+.styled-table tbody tr {
+    border-bottom: 2px solid #020202;
+}
+
+/* Selector para filas pares */
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #a24f5b80;
+}
+
+/* Borde inferior de la tabla */
+.styled-table tbody tr:last-of-type {
+    border-bottom: 5px solid #000000;
+}
+
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #779015;
+}

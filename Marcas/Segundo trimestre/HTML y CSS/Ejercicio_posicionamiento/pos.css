@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(20, 151, 151);
+}
+
+.pos{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.titulo{
+
+    background-image: url(fondo_titulo.jpg);
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+
+}
+
+h2{
+    border-bottom: 2px dashed black;
+    border-top: 1px dashed black;
+}
+
+.nota{
+    float: right;
+    width: 200px;
+    height: 100%;
+    background-image: url(fondo_titulo.jpg);
+    background-size: cover;
+    border: 2px solid black;
+}

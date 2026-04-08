@@ -1,0 +1,68 @@
+body { 
+    font-family: sans-serif; 
+    line-height: 1.6;          /* Aumenta la altura entre líneas*/
+    padding: 20px;     
+    background-color: #f4f4f4;
+
+form { 
+    max-width: 600px;          /* Limita el ancho del formulario a 600px*/
+    background: white;  
+    padding: 20px;    
+    border-radius: 8px;        /* Redondea las esquinas del recuadro del formulario */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Añade una sombra */
+}
+        
+fieldset {
+    border: 1px solid #ddd;    /* Borde gris claro alrededor de los grupos*/
+    margin-bottom: 20px;       /* Espacio debajo de cada grupo */
+    padding: 15px;           
+    border-radius: 5px;
+}
+
+legend { 
+    font-weight: bold;
+    color: #333;
+}
+
+div { 
+    margin-bottom: 15px;       /* Añade separación vertical */
+}
+
+label { 
+    display: block;            /* Hace que la etiqueta ocupe su propia línea encima del input */
+    margin-bottom: 5px;    
+    font-weight: 500;  
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="number"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="url"], 
+select {
+    width: 100%;               /* Fuerza al campo a ocupar todo el ancho disponible */
+    padding: 8px;          
+    box-sizing: border-box;    /* Asegura que el padding no aumente el ancho total del elemento */
+}
+        
+.mismaLinea label {  
+    display: inline;           /* Mantiene la etiqueta en la misma línea */
+}
+
+input[type="submit"] {          
+    background-color: #28a745;     
+    color: white;                
+    padding: 10px 20px;                   
+    cursor: pointer;      
+    border-radius: 4px;
+}
+        
+input[type="reset"] {             
+    background-color: #dc3545;         
+    color: white;                         
+    padding: 10px 20px;                  
+    cursor: pointer;         
+    border-radius: 4px;   
+}
+}

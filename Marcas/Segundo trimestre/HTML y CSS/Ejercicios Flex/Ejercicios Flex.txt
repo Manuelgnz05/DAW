@@ -1,0 +1,100 @@
+Ejercicio 1: Comenzando
+Objetivo: Activar Flexbox.
+• Reto: Tienes 5 ladrillos amontonados uno encima de otro (comportamiento por
+defecto de los div). Haz que se pongan todos en una sola fila horizontal.
+
+display: flex;
+justify-content:  flex-start;
+
+Ejercicio 2: El Imán Horizontal
+Objetivo: Dominar justify-content.
+• Reto: Pon los 5 ladrillos juntos en el final (derecha) de la pared. Luego, haz que se
+repartan con un espacio idéntico entre ellos, pero que el primero y el último toquen
+las esquinas.
+
+display: flex;
+justify-content:  space-between;
+align-items: flex-end;
+
+Ejercicio 3: El Ascensor
+Objetivo: Dominar align-items.
+• Reto: Tu pared mide 400px de alto y los ladrillos solo 50px. Haz que todos los
+ladrillos se muevan al centro vertical de la pared.
+
+display: flex;
+align-items: center;
+flex-direction: column;
+
+Nivel 2: Multilínea (La Pared Alta)
+Aquí introducimos el concepto de que los ladrillos no caben en una sola fila.
+
+Ejercicio 4: El Salto de Línea
+Objetivo: Dominar flex-wrap.
+• Reto: Tienes 15 ladrillos. Si no caben en el ancho de la pared, se están aplastando.
+Haz que los que no quepan bajen a una nueva fila.
+
+HTML:
+    <div class="hijo">6</div>
+    <div class="hijo">7</div>
+    <div class="hijo">8</div>
+    <div class="hijo">9</div>
+    <div class="hijo">10</div>
+    <div class="hijo">11</div>
+    <div class="hijo">12</div>
+    <div class="hijo">13</div>
+    <div class="hijo">14</div>
+    <div class="hijo">15</div>
+
+CSS:
+
+display: flex;
+flex-wrap: wrap;
+
+Ejercicio 5: El Bloque de Filas
+Objetivo: Dominar align-content.
+• Reto: Ahora que tienes 3 filas de ladrillos y una pared muy alta, haz que todo el
+grupo de filas se pegue al suelo (abajo) de la pared.
+
+display: flex;
+flex-wrap: wrap;
+align-content: end;
+
+Nivel 3: Control Individual (Los Ladrillos Rebeldes)
+Ahora debéis tocar el CSS de .hijo o usar selectores como .hijo:nth-child().
+
+Ejercicio 6: El Ladrillo Impaciente
+Objetivo: Dominar order.
+• Reto: Tienes 3 ladrillos numerados: 1, 2 y 3. Sin tocar el HTML, haz que el Ladrillo 3
+aparezca visualmente el primero de la fila.
+
+.hijo:nth-child(3){
+    order: -1;
+}
+
+Ejercicio 7: El Ladrillo que Engorda
+Objetivo: Dominar flex-grow.
+• Reto: Tienes 3 ladrillos. Haz que el Ladrillo 2 crezca para ocupar todo el espacio
+vacío que sobra en la fila, mientras que el 1 y el 3 mantienen su tamaño original.
+
+.hijo:nth-child(2){
+    flex-grow: 1;
+}
+
+Ejercicio 8: La Oveja Negra
+Objetivo: Dominar align-self.
+• Reto: Todos los ladrillos están arriba (align-items: flex-start), pero queremos que solo el
+Ladrillo 4 se vaya al centro vertical.
+• Propiedad clave: align-self: center.
+
+.hijo:nth-child(4){
+    align-self: center;
+}
+
+RETO Final: "El Centro Absoluto"
+Ahora tenéis que crear un contenedor de 300x300px con un solo ladrillo dentro de
+50x50px. Deben colocarlo exactamente en el centro usando solo 3 líneas de código CSS en
+el padre.
+
+display: flex; 
+justify-content: center;
+align-items: center;

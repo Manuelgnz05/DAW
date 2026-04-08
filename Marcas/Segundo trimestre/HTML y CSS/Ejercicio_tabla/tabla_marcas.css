@@ -1,0 +1,59 @@
+        body {
+            font-family: 'Poppins', sans-serif; /* Tipografía importada */
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        /* REQUISITO 2: Estilos CSS de la Tabla */
+        .music-table {
+            width: 100%;
+            max-width: 900px;
+            /* REQUISITO 2: Limpieza (border-collapse) */
+            border-collapse: collapse; 
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra para darle toque "profesional" */
+            border-radius: 10px;
+            overflow: hidden; /* Para que los bordes redondeados se vean en las esquinas */
+        }
+
+        .music-table thead {
+            background-color: #009879; /* Color del encabezado */
+            color: white;
+        }
+
+        /* REQUISITO 2: Espaciado generoso (Padding) */
+        .music-table th, 
+        .music-table td {
+            padding: 20px 25px;
+            text-align: left;
+        }
+
+        /* Estilo para los encabezados */
+        .music-table th {
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* REQUISITO 2: Zebra Striping (Filas pares de otro color) */
+        .music-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        /* REQUISITO 3: Interacción (:hover) */
+        .music-table tbody tr:hover {
+            background-color: #ddd;
+            cursor: default;
+            transition: background-color 0.3s ease;
+        }
+
+        /* REQUISITO 3: Imágenes circulares y object-fit */
+        .artist-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%; /* Hace la imagen circular */
+            object-fit: cover; /* Evita que la imagen se deforme */
+            border: 2px solid #009879;
+        }

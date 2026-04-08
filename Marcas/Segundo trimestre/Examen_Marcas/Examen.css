@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Degular, Tahoma, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 10px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.boton1{
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.boton2{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.ej2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.encantados{
+    font-style: bold;
+}
+
+.titulo2{
+    flex-wrap: wrap;
+    text-align: center;
+    width: 400px;
+    font-size: 30px;
+}
+
+.texto-pequeno{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    gap: 30px;
+    width: 450px;
+}
+
+.ej3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.movil{
+    border-radius: 15px;
+    width: 30%;
+}
+
+.div-ej3{
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    height: 400px;
+    border-radius: 15px;
+    width: 60%;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.texto-ej3{
+    font-size: 30px;
+}
+
+.imagenes{
+    padding: 10px;
+}
+
+
+.imagen-ej3{
+    border-radius: 5px;
+}
+
+.ej-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.texto-4{
+    justify-content: center;
+    width: 90%;
+}
+
+.texto-ej4{
+    text-align: center;
+    width: 100%;
+}
+
+.botones-ej4{
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    justify-content: center;
+}
+
+.boton-4{
+    background-color: gainsboro;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: start;
+    border-radius: 10px;
+    cursor: pointer;
+    font-style: bold;
+    font-weight: 800;
+}
+
+.boton-4:hover{
+    background-color: pink;
+}
+
+.ej-5{
+    background-color: rgb(3, 3, 65);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenedor1{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.img-ej5{
+    width: 100%;
+}
+
+.separador{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.texto-5{
+    margin-bottom: 10px;
+}
+
+.lista{
+    list-style: none;
+    color: gray;
+}
+
+.lista li{
+    margin-bottom: 10px;
+}
+
+.contenedor-img{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-img{
+    display: flex;
+    gap: 40px;
+}
+
+.formu{
+    gap: 10px;
+}
+
+.regis{
+    gap: 20px;
+}
+
+.inpu{
+    background-color: gray;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.check{
+    display: flex;
+    gap: 20px;
+}
+
+.img{
+    width: 20%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.text-foot{
+    display: flex;
+    gap: 20px;
+    color: gray;
+}
+
+.mg{
+    background-color: pink;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+

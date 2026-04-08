@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes</title>
+</head>
+<body>
+    <style>
+        /*.cabecera{
+    background-image: url(./img/montaña.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}*/
+
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .menu{
+            background-color: green;
+            display: flex;
+            list-style: none;
+            justify-content: right;
+            gap: 15px;
+            width: auto;
+            height: 50px;
+            align-items: center;
+        }
+
+        .menu li{
+            color: white;
+            cursor: pointer;
+        }
+
+        h1{
+            text-align: center;
+            color: green;
+            text-shadow: 2px 2px 2px black;
+            background-image: url(imagenes/rayas.png);
+            padding: 15px;
+        }
+
+        form { 
+            max-width: 600px;          /* Limita el ancho del formulario a 600px*/
+            background: white;  
+            padding: 20px;    
+            border-radius: 8px;        /* Redondea las esquinas del recuadro del formulario */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Añade una sombra */
+        }
+                
+        fieldset {
+            border: 1px solid #ddd;    /* Borde gris claro alrededor de los grupos*/
+            margin-bottom: 20px;       /* Espacio debajo de cada grupo */
+            padding: 15px;           
+            border-radius: 5px;
+        }
+
+        legend { 
+            font-weight: bold;
+            color: #333;
+        }
+
+        div { 
+            margin-bottom: 15px;       /* Añade separación vertical */
+        }
+
+        label { 
+            display: block;            /* Hace que la etiqueta ocupe su propia línea encima del input */
+            margin-bottom: 5px;    
+            font-weight: 500;  
+        }
+
+        input[type="text"], 
+        input[type="password"], 
+        input[type="number"], 
+        input[type="email"], 
+        input[type="tel"], 
+        input[type="url"], 
+        select {
+            width: 100%;               /* Fuerza al campo a ocupar todo el ancho disponible */
+            padding: 8px;          
+            box-sizing: border-box;    /* Asegura que el padding no aumente el ancho total del elemento */
+        }
+                
+        .mismaLinea label {  
+            display: inline;           /* Mantiene la etiqueta en la misma línea */
+        }
+
+        input[type="submit"] {          
+            background-color: #28a745;     
+            color: white;                
+            padding: 10px 20px;                   
+            cursor: pointer;      
+            border-radius: 4px;
+        }
+                
+        input[type="reset"] {             
+            background-color: #dc3545;         
+            color: white;                         
+            padding: 10px 20px;                  
+            cursor: pointer;         
+            border-radius: 4px;   
+        }
+
+        .formulario{
+            background-color: rgb(115, 115, 208);
+            margin: 10px;
+            border-radius: 5px;
+            align-content: center;
+        }
+
+        label{
+            display: block;
+        }
+
+        form{
+            padding: 10px;
+        }
+
+        .boton{
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 25px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .formu{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin: 8px;
+        }
+
+        input{
+            flex: 1;              
+            border-radius: 4px;
+        }
+
+        label{
+            color: white;
+        }
+
+        .music-table {
+            width: 100%;
+            max-width: 900px;
+            /* REQUISITO 2: Limpieza (border-collapse) */
+            border-collapse: collapse; 
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra para darle toque "profesional" */
+            border-radius: 10px;
+            overflow: hidden; /* Para que los bordes redondeados se vean en las esquinas */
+        }
+
+        .music-table thead {
+            background-color: #009879; /* Color del encabezado */
+            color: white;
+        }
+
+        /* REQUISITO 2: Espaciado generoso (Padding) */
+        .music-table th, 
+        .music-table td {
+            padding: 20px 25px;
+            text-align: left;
+        }
+
+        /* Estilo para los encabezados */
+        .music-table th {
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* REQUISITO 2: Zebra Striping (Filas pares de otro color) */
+        .music-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        /* REQUISITO 3: Interacción (:hover) */
+        .music-table tbody tr:hover {
+            background-color: #ddd;
+            cursor: default;
+            transition: background-color 0.3s ease;
+        }
+
+        /* REQUISITO 3: Imágenes circulares y object-fit */
+        .artist-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%; /* Hace la imagen circular */
+            object-fit: cover; /* Evita que la imagen se deforme */
+            border: 2px solid #009879;
+        }
+    </style
+    /*
+    <p><b>Texto en negrita</b><br>
+    <i>Texto en cursiva</i><br>
+    <strike>Texto tachado</strike><br>
+    <em>Texto en enfasis</em><br>
+    <small>Texto pequeño</small><br></p>
+
+    <p>X<sub>2</sub> y X<sup>3</sup><br></p>
+
+    <p><mark>Texto remarcado</mark><br>
+    “Pequeña cita”<br>
+    16:01<br>
+    <i>Titulo de un articulo</i><br><br>
+
+    Texto largo del articulo al que hacemos referencia
+    <br><br>
+
+    <i>Mfernanda Hoyuela</i><br>
+    Vedruna.org<br><br>
+
+    Sevilla<br>
+    Hola<br>
+    Adios</p>
+    */
+
+    <header>
+        <ul class="menu">
+            <li>Inicio</li>
+            <li>Para quien</li>
+            <li>Viajes</li>
+            <li>Servicios</li>
+            <li>Contacta</li>
+        </ul>
+        <h1>Garantía de exito</h1>
+    </header>
+    <h2>Formulario de Inscripción Profesional</h2>
+
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>Datos de Identificación</legend>
+            <div>
+                <label>Nombre de Usuario:</label>
+                <input type="text" required 
+                       pattern="[A-Za-z0-9]+" maxlength="15" autofocus>
+            </div>
+            <div>
+                <label>Contraseña:</label>
+                <input type="password" minlength="8" maxlength="12" required>
+            </div>
+            <div>
+                <label">Dorsal Favorito:</label>
+                <input type="number" min="1" max="9999">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información de Contacto y Perfil</legend>
+            <div>
+                <label>Correo Electrónico:</label>
+                <input type="email"  required>
+            </div>
+            <div>
+                <label>Teléfono de Emergencia:</label>
+                <input type="tel" placeholder="Formato: 123-456-789">
+            </div>
+            <div>
+                <label>URL de Perfil (Strava/Instagram):</label>
+                <input type="url">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias de Carrera</legend>
+            
+            <div class="mismaLinea">
+                <label>Categoría:</label><br>
+                <input type="radio" value="junior"> <label>Junior</label>
+                <input type="radio" value="senior"> <label>Senior</label>
+                <input type="radio" value="veterano"> <label>Veterano</label>
+            </div>
+
+            <div class="mismaLinea">
+                <label>Talla de Camiseta:</label><br>
+                <input type="checkbox" value="S"> <label>S</label>
+                <input type="checkbox" value="M"> <label>M</label>
+                <input type="checkbox" value="L"> <label>L</label>
+                <input type="checkbox" value="XL"> <label>XL</label>
+            </div>
+
+            <div>
+                <label>Color de Equipación:</label>
+                <input type="color">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detalles de la Competición</legend>
+            <div>
+                <label>Fecha de Llegada:</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Nivel de Condición Física (1-10):</label>
+                <input type="range" min="1" max="10" step="1">
+            </div>
+            <div>
+                <label>Código de Invitación (AB123):</label>
+                <input type="text" pattern="[A-Z]{2}[0-9]{3}" title="Dos letras mayúsculas seguidas de tres números">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>País</legend>
+            <div>
+                <label>País de Origen:</label>
+                <input type="text" value="España" readonly>
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar todo">
+        </div>
+
+    </form>
+    <div class = formulario>
+            <form action="registrar">
+                <div class = formu>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class = formu>
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class = formu>
+                    <label>Salida</la>
+                    <input type="date">
+                </div>
+                <div class = formu>
+                    <label>Llegada</label>
+                    <input type="date">
+                </div>
+                <input type="submit" value="Enviar" class="boton">
+            </form>
+        </div>
+
+        <table class="music-table">
+        <thead>
+            <tr>
+                <th scope="col">Foto</th>
+                <th scope="col">Artista</th>
+                <th scope="col">Género</th>
+                <th scope="col">Álbum Icónico</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="Daft punk.jpg" alt="Daft Punk" class="artist-img">
+                </td>
+                <th scope="row">Daft Punk</th>
+                <td>Electrónica / House</td>
+                <td>Discovery</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="Coldplay.jpg" alt="Coldplay" class="artist-img">
+                </td>
+                <th scope="row">Coldplay</th>
+                <td>Pop Rock / Alternativo</td>
+                <td>A Rush of Blood to the Head</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="Rosalia.jpg" alt="Rosalía" class="artist-img">
+                </td>
+                <th scope="row">Rosalía</th>
+                <td>Flamenco / Urbano</td>
+                <td>El Mal Querer</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="Queen.jpg" alt="Queen" class="artist-img">
+                </td>
+                <th scope="row">Queen</th>
+                <td>Rock Clásico</td>
+                <td>A Night at the Opera</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="The Weeknd.jpg" alt="The Weeknd" class="artist-img">
+                </td>
+                <th scope="row">The Weeknd</th>
+                <td>R&B / Synth-pop</td>
+                <td>After Hours</td>
+                <td colspan="3" style="text-align: center; font-weight: bold;"> Próximamente: Gira Mundial 2026 </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+<div class="contenedar2">
+                <div class = formulario>
+                    <form action="registrar">
+                        <legend class="lista-5">Únete a la TRIBBU</legend>
+                        <div class = formu>
+                            <input type="text" placeholder="¿Como podemos ayudarte?">
+                        </div>
+                        <div class = formu>
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="check">
+                            <input type="checkbox"> 
+                            <p>He leidoy acepto la Politica de privacidad y los terminos y condiciones</p>
+                        </div>
+                    </form>
+                </div>
+            <div class="imagenes-5">
+                <p class="lista-5">Impulsado por</p>
+                <img src="img/logo_financiadox_1.png" alt="logo" class="img">
+                <img src="img/logo_financiadox_2.png" alt="logo" class="img">
+                <img src="img/logo_financiadox_1.png" alt="logo" class="img">
+                <img src="img/logo_financiadox_2.png" alt="logo" class="img">
+                <img src="img/logo_financiadox_1.png" alt="logo" class="img">
+                <img src="img/logo_financiadox_2.png" alt="logo" class="img">
+                <img src="img/logo_financiadox_1.png" alt="logo" class="img">
+                <img src="img/logo_financiadox_2.png" alt="logo" class="img">
+            </div>
+        </div>
+            </div>
+            
+        <footer class="foot">
+            <div class="text-foot">
+                <p class="texto-6">Politica de privacidad</p>
+                <p class="texto-6">Politica de cookies</p>
+                <p class="texto-6">Politica de seguridad</p>
+            </div>
+            <div class="text-foot">
+                <p class="texto-6">Copyright</p>
+            </div>
+            
+        </footer>
+    </section>
