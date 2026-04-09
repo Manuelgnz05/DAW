@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    background-image: url("../img/fondo_trading\ 1.png");
+    height: 100vh;
+    padding: 20px;
+}
+
+.indice{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.parte_toro{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 1;
+}
+
+.toro{
+    height: 65%;
+}
+
+.letra_toro{
+    color: white;
+    font-size: 20px;
+}
+
+.letra_toro2{
+    color: aqua;
+}
+
+.parte_centro{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.medio{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+}
+
+.botones{
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.boton1{
+    width: 20%;
+    height: 60%;
+    border-radius: 5px;
+    border: 1px white solid;
+    background-color: transparent;
+    color: white;
+}
+
+.boton2{
+    width: 20%;
+    height: 60%;
+    border-radius: 5px;
+    background-color: aqua;
+    border: none;
+}
+
+.parte_grafica{
+    background-color: aquamarine;
+}
