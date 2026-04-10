@@ -7,7 +7,7 @@
     <title>Index</title>
 </head>
 <body>
-    <header class="head">
+    <header class="head" id = "inicio">
         <div class="indice">
             <div class="parte_toro">
                 <img src="../img/logo.png" alt="logo_toro" class="toro">
@@ -16,12 +16,10 @@
                     <p class="letra_toro2">Software</p>
                 </div>
             </div>
-            <div class="parte_centro">
-                <ul class="medio">
-                    <li>Inicio</li>
-                    <li>Productos</li>
-                </ul>
-            </div>
+            <ul class="medio">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+            </ul>
             <div class="botones">
                 <button class="boton1">Identificarse</button>
                 <button class="boton2">Acceso gratuito</button>
@@ -29,14 +27,42 @@
         </div>
         <div class="parte_grafica">
             <div class="texto">
-                <h1 class="eslogan">La Tecnología para un mejor Trading</h1>
+                <p class="eslogan">La Tecnología para un mejor Trading</p>
                 <p class="subeslogan">ProRealTime: programa de trading y gráficos</p>
             </div>
             <div class="imagen">
                 <img src="../img/esta 1.png" alt="grafica" class="imagen">
-                <p>prorealtime</p><p>web</p>
+                <div class="texto_grafica">
+                    <p>prorealtime</p>
+                    <p class="web">web</p>
+                </div>
             </div>
         </div>
     </header>
+    <div class="productos" id="productos">
+        <p class="titulo">Productos</p>
+        <div class="cajas">
+            <div class="caja">
+                <img src="../img/image 7.png" alt="imagen_regalo" class="imagen_caja">
+                <p class="titulo_caja">Plataformas gratuitas</p>
+                <p class="texto_caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum iste at nam autem ducimus placeat explicabo nobis et</p>
+            </div>
+            <div class="caja">
+                <img src="../img/image 9.png" alt="imagen_mano" class="imagen_caja">
+                <p class="titulo_caja">Potente y fiable</p>
+                <p class="texto_caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum iste at nam autem ducimus placeat explicabo nobis et</p>
+            </div>
+            <div class="caja">
+                <img src="../img/image 8.png" alt="imagen_ordenador" class="imagen_caja">
+                <p class="titulo_caja">Fácil de usar</p>
+                <p class="texto_caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum iste at nam autem ducimus placeat explicabo nobis et</p>
+            </div>
+            <div class="caja">
+                <img src="../img/image 10.png" alt="imagen_cascos" class="imagen_caja">
+                <p class="titulo_caja">Servicio de atención eficiente</p>
+                <p class="texto_caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum iste at nam autem ducimus placeat explicabo nobis et</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
