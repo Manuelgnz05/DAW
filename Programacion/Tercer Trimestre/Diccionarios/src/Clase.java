@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.Map.Entry;
 
-public class clase {
+public class Clase {
 
     public static void main(String[] args) {
 //        Map<String, Float> mapaProductos = new HashMap<>();
