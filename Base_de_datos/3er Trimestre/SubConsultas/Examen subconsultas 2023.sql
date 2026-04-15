@@ -4,10 +4,17 @@
 select ProductName from products where SupplierID in 
 	(select SupplierID from suppliers where Country in ("Australia", "Canada", "USA")) 
     and ProductID%2 = 0;
+    
+select ProductName from products 
+join suppliers on (suppliers.SupplierID = products.SupplierID) where Country in ("Australia", "Canada", "USA") 
+and ProductID%2 = 0;
 
 -- 2. Productos cuyo nombre de categoría empieza por la letra C y termina por la letra S.
 
-select * from products where CategoryID in (select CategoryID from categories where CategoryName like "C%S");
+select * from products where CategoryID in 
+	(select CategoryID from categories where CategoryName like "C%S");
+    
+select * from products p join categories c on (p.CategoryID = c.CategoryID) where CategoryName like "C%S";
 
 -- 3. Mostrar nombre y apellidos de aquellos empleados que tienen un número de pedidos superior
 -- a los realizados por Anne Dodsworth o Nancy Davolio.
@@ -15,7 +22,7 @@ select * from products where CategoryID in (select CategoryID from categories wh
 select FirstName, LastName from employees join orders on(orders.EmployeeID = employees.EmployeeID) 
 group by orders.EmployeeID having count(*)>
 	(select count(*) from employees join orders on (orders.EmployeeID = employees.EmployeeID) 
-    where FirstName in ("Anne", "Dodsworth") or LastName in ("Nancy", "Davolio"));
+    where FirstName in ("Anne", "Nancy") and LastName in ("Dodsworth", "Davolio"));
 
 -- 4. Países que tienen el triple de clientes que Irlanda.
 
@@ -34,4 +41,4 @@ select * from products where UnitsInStock >
 select CategoryName from categories 
 join products on (categories.CategoryID = products.CategoryID)
 group by CategoryName having count(*)> 
-	(select count(*) from orderdetails where OrderID in (10260, 10263, 10283));
+	(select count(distinct ProductID) from orderdetails where OrderID in (10260, 10263, 10283));

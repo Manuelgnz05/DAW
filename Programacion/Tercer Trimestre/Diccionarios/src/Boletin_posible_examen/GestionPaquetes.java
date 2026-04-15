@@ -5,7 +5,7 @@ import java.util.Map.Entry;
 
 public class GestionPaquetes{
 
-    private Map<String, List<Paquete>> registro;
+    private Map<String, List<Paquete>> registro = new TreeMap<>();
 
     public void asignarPaquete(String ciudad, Paquete p){
         List<Paquete> paquetes;
@@ -40,6 +40,44 @@ public class GestionPaquetes{
             }
         }
         return maxPaquete;
+    }
+
+    /*
+    List<Paquete> listaPaquetes = registro.get(ciudad);
+
+        Double mayorPeso = 0.0;
+        Paquete masPesado = null;
+        for (Paquete paquete : listaPaquetes) {
+            Double peso = paquete.getPeso();
+            if (peso > mayorPeso) {
+                mayorPeso = peso;
+                masPesado = paquete;
+            }
+        }
+
+        listaPaquetes.remove(masPesado);
+
+        return masPesado;
+     */
+
+    public Map<String,Double> obtenerPesoTotalPorCiudad() {
+        Map<String,Double> nuevoMapa = new HashMap<>();
+        for(Map.Entry<String, List<Paquete>> entrada: registro.entrySet()) {
+            double peso = 0.0;
+            for(Paquete p: entrada.getValue()) {
+                peso += p.getPeso();
+            }
+            nuevoMapa.put(entrada.getKey(), peso);
+        }
+
+        return nuevoMapa;
+    }
+
+    @Override
+    public String toString() {
+        return "GestionPaquetes{" +
+                "registro=" + registro +
+                '}';
     }
 
 }

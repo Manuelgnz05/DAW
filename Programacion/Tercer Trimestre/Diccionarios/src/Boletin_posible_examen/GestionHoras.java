@@ -23,13 +23,16 @@ public class GestionHoras {
 
     private Map<String, List<Double>> registro;
 
+    public GestionHoras() {
+        this.registro = new HashMap<>();
+    }
+
+    public GestionHoras(Map<String, List<Double>> registro) {
+        this.registro = registro;
+    }
+
     public void registrarNota(String nia, Double nota){
-        List<Double> notas ;
-        if (registro.get(nia) == null){
-            notas = new ArrayList<>();
-        }else {
-            notas = registro.get(nia);
-        }
+        List<Double> notas = registro.getOrDefault(nia, new ArrayList<>());
         notas.add(nota);
         registro.put(nia, notas);
     }
@@ -70,4 +73,14 @@ public class GestionHoras {
         }
     }
 
+    public List<Double> obtenerNotas(String nia){
+        return registro.get(nia);
+    }
+
+    @Override
+    public String toString() {
+        return "GestionHoras{" +
+                "registro=" + registro +
+                '}';
+    }
 }
