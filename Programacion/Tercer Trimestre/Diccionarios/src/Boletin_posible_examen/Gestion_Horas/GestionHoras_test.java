@@ -1,4 +1,7 @@
-package Boletin_posible_examen;
+package Boletin_posible_examen.Gestion_Horas;
+
+import Boletin_posible_examen.Almacen_Inteligente.AlumnoException;
+import Boletin_posible_examen.Almacen_Inteligente.GestionHoras;
 
 import java.util.List;
 

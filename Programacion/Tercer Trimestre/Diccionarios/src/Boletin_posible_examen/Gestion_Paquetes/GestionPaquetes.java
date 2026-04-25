@@ -1,4 +1,4 @@
-package Boletin_posible_examen;
+package Boletin_posible_examen.Gestion_Paquetes;
 
 import java.util.*;
 import java.util.Map.Entry;

@@ -1,4 +1,4 @@
-package Boletin_posible_examen;
+package Boletin_posible_examen.Almacen_Inteligente;
 //Ejercicio 1: Gestión de Expedientes Académicos
 //Contexto: Una universidad necesita un sistema para gestionar las notas de los alumnos.
 //Cada alumno está identificado por su NIA (Número de Identificación Alumnado),

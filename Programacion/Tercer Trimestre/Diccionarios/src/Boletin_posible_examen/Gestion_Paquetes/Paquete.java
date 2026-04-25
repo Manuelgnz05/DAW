@@ -1,4 +1,6 @@
-package Boletin_posible_examen;
+package Boletin_posible_examen.Gestion_Paquetes;
+
+import Boletin_posible_examen.PrioridadException;
 
 public class Paquete implements Comparable<Paquete>{
 

@@ -1,6 +1,8 @@
-package Boletin_posible_examen;
+package Boletin_posible_examen.Gestion_Paquetes;
 
-public class Gestion_paquetes_test {
+import Boletin_posible_examen.PrioridadException;
+
+public class GestionPaquetes_test {
     static void main() {
         GestionPaquetes gestor2 = new GestionPaquetes();
         try {
