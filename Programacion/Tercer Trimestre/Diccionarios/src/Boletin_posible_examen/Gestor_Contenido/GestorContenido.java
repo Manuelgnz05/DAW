@@ -62,8 +62,12 @@ public class GestorContenido {
         return registro.getOrDefault(contenido, new HashSet<>()).size();
     }
 
-    public List<Contenido> rankingContenido(){
-
+    public void rankingContenido(){
+        List<Entry<Contenido, Set<Usuario>>> vis = new ArrayList<>(registro.entrySet());
+        Collections.sort(vis, new VisualizacionesComparator());
+        for(Entry<Contenido, Set<Usuario>> entrada: vis) {
+            System.out.println(entrada.getKey());
+        }
     }
 
     public boolean consultarUsuarioVistoContenido(Contenido contenido, Usuario usuario){
